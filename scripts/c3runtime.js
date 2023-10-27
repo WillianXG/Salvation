@@ -4672,7 +4672,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.Platform.Cnds.IsMoving,
 		C3.Plugins.Sprite.Acts.SetAnim,
 		C3.Behaviors.Platform.Cnds.IsJumping,
-		C3.Plugins.Keyboard.Cnds.OnKey,
+		C3.Plugins.Keyboard.Cnds.IsKeyDown,
 		C3.Behaviors.Platform.Acts.SimulateControl,
 		C3.Plugins.Sprite.Acts.SetMirrored,
 		C3.Behaviors.Platform.Cnds.IsFalling,
@@ -4705,6 +4705,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.scrollto.Acts.Shake,
 		C3.Plugins.Sprite.Acts.SetOpacity,
 		C3.Behaviors.Bullet.Acts.SetEnabled,
+		C3.Plugins.Keyboard.Cnds.OnKey,
 		C3.Plugins.System.Acts.Signal,
 		C3.Plugins.Sprite.Cnds.OnCreated,
 		C3.Behaviors.Bullet.Acts.SetAngleOfMotion,
@@ -4821,6 +4822,7 @@ self.C3_JsPropNameTable = [
 	{BgFinal: 0},
 	{Parabéns: 0},
 	{PlayerFinal: 0},
+	{vida2: 0},
 	{vida: 0},
 	{savePoint: 0},
 	{chaves: 0}
@@ -4964,8 +4966,8 @@ self.C3_ExpressionFuncs = [
 		() => 80,
 		() => 50,
 		() => 100,
-		() => "tiro",
 		() => 15,
+		() => "tiro",
 		p => {
 			const n0 = p._GetNode(0);
 			const n1 = p._GetNode(1);
@@ -4975,7 +4977,8 @@ self.C3_ExpressionFuncs = [
 		() => 2.5,
 		() => 250,
 		() => 700,
-		() => 90
+		() => 90,
+		() => 20
 ];
 
 
